@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "qichat_mobile",
+    "slug": "qichat_mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.misscoding.googleauthexporeactnative",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Your camera will be used to scan QR codes.",
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.735418652883-7vhughvpfb63t69oh69vqnjv64jloicm"
+            ]
+          }
+        ]
+      }
+    },
+    "android": {
+      "package": "com.misscoding.googleauthexporeactnative",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "CAMERA",
+        "CAMERA_ROLL"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Qichat to access your camera",
+          "microphonePermission": "Allow Qichat to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerEnvironment": "Production"
+        }
+      ],
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "796a96aa-a447-42cc-aab5-a30d2e21ae9a"
+      }
+    }
+  }
+}
