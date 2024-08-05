@@ -1,0 +1,33 @@
+{
+  "name": "chat",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "agora-rtc-sdk-ng": "^4.20.0",
+    "axios": "^1.6.7",
+    "firebase": "^10.8.0",
+    "framer-motion": "^11.0.21",
+    "howler": "^2.2.4",
+    "lodash.debounce": "^4.0.8",
+    "next": "14.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
+    "react-mic": "^12.4.6",
+    "react-qr-code": "^2.0.12",
+    "socket.io-client": "^4.7.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0"
+  }
+}
